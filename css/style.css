@@ -3,6 +3,14 @@ body{
 }
 
 /*----------------------INDEX-------------------------------*/
+.navbar-brand{
+    height: 100px;
+}
+
+.navbar-nav{
+font-family: 'Raleway', sans-serif;
+font-size: 18px;
+}
 
 .experiencia:hover{ 
     transform: scale(1.2,1.2);}
@@ -13,6 +21,8 @@ body{
 
 .efectividad:hover{ 
     transform: scale(1.2,1.2);}
+
+    
 
 /*---------------------NOSOTROS-------------------------*/
 
@@ -34,122 +44,27 @@ body{
 /*-------------------SERVICIOS--------------------*/
 .main-servicios{
     display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items: center;
-    
-    
-    
-    
 }
+
 .section-main2{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    
-    
 
 
 }
+
 .titulo-areas{
     text-align: center;
     font-weight: bold;
-    color: black;
-    
-   
-    
-   
-    
-}
-.areas{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: space-between;
-    
-   
-    
-
-}
-
-.laboral{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-
-    
-   
-
-}
-
-.img-laboral{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.info-laboral{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+    color: black; 
     
 }
 
-
-
-
-.comercial{
+.card-servicios{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-   
-    
-
-}
-
-.img-comercial{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.info-comercial{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-
-
-
-
-.asesorar{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;    
-    width: 80%;
-
-}
-
-.img-asesorar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.info-asesorar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+    width: 90%;
 }
 
 /*--------------------UBICACION-----------------------------*/
@@ -157,30 +72,32 @@ body{
 .main-ubicacion{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 1400px;
+    justify-content: space-between;
+    align-items: center;    
     background-image: url("../img/mapa_fondo.png"); 
     
 }
 
-
-
-.titulo-nuestraubicacion{
-    display: inline-flex;
-    justify-content: space-evenly;
+.nuestra-ubicacion{
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+    
+    
+}
+
+.titulo-nuestraubicacion{    
+    text-align: center;
+    font-weight: bolder;
+    color: black; 
+    font-family: 'Raleway', sans-serif; 
+    
 }
 
 
-.titulo-nuestraubicacion{
-    background-color: rgb(231, 231, 231);
-    color: black;
-    
-    font-weight: bold;
-    text-align: center;
-    
-}  
 .frase{
     display: flex;
     flex-direction: column;
@@ -262,59 +179,14 @@ body{
     display: flex;
     justify-content: space-around;
 }
- .header{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center ;
-    padding: 1rem 0rem;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    height: 100px;
-    background-color: rgb(255, 255, 255);
-    text-decoration-line: none;    
-
-    
-    
-}
-
-a {color: #000000; 
-    font-family: 'Raleway', sans-serif; 
-    text-decoration: none;}
-
-a:hover {color: #00a6b4;; font-family: 'Raleway', sans-serif;  
-            text-decoration: none;} 
-
-
-
-.header-logo{
-    width: 100px; 
- }
-
-
-
-
- .header-menu{
-    list-style-type: none;
-    align-items: flex-end;
-    text-decoration-line: none;
-    
-}
-
-.header-menu li{
-    display: inline-block;
-    margin: 1rem 3rem;
-    
-}
-    
-/*--------------MAIN INDEX*/ 
 
 #main{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
-    background-image: url("../img/banner_estudiojuridico.jpg");
-    height:600px;
+    background-image: url("../img/banner_estudiojuridico.png");
+    height:800px;
     width: 100%;
    
     
@@ -447,10 +319,10 @@ a:hover {color: #00a6b4;; font-family: 'Raleway', sans-serif;
     justify-content:space-evenly;
     align-content: center;
     justify-items: center;
-    height:600px;
+    height:800px;
     width: 100%;
     background-color: #cee8e7;
-    margin: 30px 0px 30px 0px;
+    
 
 }
 
@@ -949,18 +821,18 @@ line-height: 40px;
 
 
 .main-servicios{
-    height: 1800px;
-    /*margin: 0px 100px 0px 100px;*/
+    flex-direction: column;
+    align-items: center;
+    height: 1200px;
+    justify-content: start;
+    align-content: center;
+    
     
     
     
 }
 .section-main2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 250px;
+    height: 180px;
     width: 100%;
     background-color: rgb(236, 236, 236);
 
@@ -968,7 +840,7 @@ line-height: 40px;
 }
 .titulo-areas{
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
     border-top: #000000 solid 3px;
     color: black;
@@ -979,97 +851,41 @@ line-height: 40px;
     
 }
 
+.card-servicios{
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: space-evenly;
+    align-content: space-between;
 
-
-.img-laboral{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-
-.info-laboral{
-    height: 400px;
-    margin: 0px 30px 0px 30px;
-    color: rgb(25, 25, 25);
-}
-
-.titulo-laboral{
-    font-size: 30px;
-    font-weight: bold;
-    color: rgb(25, 25, 25);
-}
-
-
-
-
-.img-comercial{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.info-comercial{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: flex-start;
-    height: 400px;
-    margin: 0px 30px 0px 30px;
-}
-
-.titulo-comercial{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-
-
-.img-asesorar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.info-asesorar{
-    height: 400px;
-    margin: 0px 30px 0px 30px;
-}
-
-.titulo-asesorar{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-
-
-
-    
+   
 /*-------------------------------UBICACION--------------------------------*/
 
 .main-ubicacion{
     
     height: 1600px;
+    height: 2500px;
     
 }
 
-
+.nuestra-ubicacion{ 
+    height: 180px;
+    width: 100%;
+   
+    
+}
 
 .titulo-nuestraubicacion{
-    display: inline-flex;
-    justify-content: space-evenly;
-    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    border-top: #000000 solid 3px;
+    line-height: 50px;
+   
+
 }
 
 
-.titulo-nuestraubicacion{
-    background-color: rgb(231, 231, 231);
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    height: 200px;
-    width: 100%;
-}  
+
 .frase{
     display: flex;
     flex-direction: column;
@@ -1130,66 +946,6 @@ line-height: 40px;
         justify-content: space-around;
     }
   
-    .header{
-        display: grid;
-        grid-template-columns: 250px 300px;
-        grid-template-rows: 100%;
-        grid-template-areas: "logo menu";        
-        justify-content: center;
-        align-content: center;
-        justify-items:center ;
-        align-items: center;                  
-        border-bottom: 1px solid rgb(255, 255, 255);
-        background-color: rgb(255, 255, 255);
-        height: 300px;
-        
-    }
-
-
-
-    
-a {color: #000000; 
-    font-family: 'Raleway', sans-serif; 
-    text-decoration: none;}
-
-
-a:hover {color: #00a6b4;; font-family: 'Raleway', sans-serif;  
-            text-decoration: none;}   
-
-
-
-.header-logo{
-    grid-area: logo;
-    width: 50%;    
-    object-fit: cover;
- }
-
-
-
-
- .header-menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: space-around;
-    height: 80%;
-    width: 100%;
-    margin: 5px;
-    
-    
-}
-.ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: center;
-
-    list-style-type: none;
-    font-size: 18px;
-    text-align: center;
-}
-
-
 
 
 /*MAIN INDEX*/ 
@@ -1198,7 +954,7 @@ a:hover {color: #00a6b4;; font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../img/banner_estudiojuridico.jpg");
+    background-image: url("../img/banner_estudiojuridico.png");
     height:1800px;
     width: 100%;
    
@@ -1338,10 +1094,10 @@ a:hover {color: #00a6b4;; font-family: 'Raleway', sans-serif;
     row-gap: 100px;
     align-content: center;
     justify-items: center;
-    height:2000px;
+    height:2200px;
     width: 100%;
     background-color: #cee8e7;
-    margin: 30px 0px 30px 0px;
+   
 
 }
 
@@ -1626,8 +1382,8 @@ line-height: 40px;
 /*---------------------SERVICIOS -MOBILE PHONE-----------------*/
 
 .main-servicios{
-    height: 3000px;
-    
+    flex-direction: column;    
+    height:1800px;  
     
     
     
@@ -1650,128 +1406,48 @@ line-height: 40px;
    
     
 }
-.laboral{
-    display: flex;
+.card-servicios{
     flex-direction: column;
-    justify-content:center;
-    align-items: center; 
-    
-    width: 100%;
-    
-
-}
-
-.img-laboral{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.info-laboral{
-    height: 200px;
-    width: 60%;    
-    justify-content: space-evenly;
+    margin-top: 5%;
     align-content: center;
-    color: rgb(25, 25, 25);
-    text-align: center;
-}
-
-.titulo-laboral{
-    font-size: 30px;
-    font-weight: bold;
-    color: rgb(25, 25, 25);
-}
-
-
-.comercial{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center; 
-    
-    width: 100%;
-    
-
-}
-
-.img-comercial{
-    display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.info-comercial{
-    height: 200px;
-    width: 60%;    
-    justify-content: space-evenly;
-    align-content: center;
-    color: rgb(25, 25, 25);
-    text-align: center;
-}
-
-.titulo-comercial{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-
-.asesorar{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center; 
-    
+    justify-content: space-between;    
+    height: 1500px;
     width: 100%;
-    
 
-}
-
-.img-asesorar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.info-asesorar{
-    height: 200px;
-    width: 60%;    
-    justify-content: space-evenly;
-    align-content: center;
-    color: rgb(25, 25, 25);
-    text-align: center;
-}
-
-.titulo-asesorar{
-    font-size: 30px;
-    font-weight: bold;
 }
 
 /*--------------------UBICACION MOBILE PHONE------------*/
 
 .main-ubicacion{
-    height: 1500px;
-    justify-content: space-evenly;
+    height: 2000px;    
     align-content: center;
+    justify-content: space-around;
 }
 
 .titulo-nuestraubicacion{
     
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
-    height: 300px;
-    width: 100%;
+    border-top: #000000 solid 3px;
+    
 }  
 
 
-
+.nuestra-ubicacion{ 
+    height: 150px;
+    width: 100%;
+   
+    
+}
 
 .frase{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 400px;
+    height: 500px;
     width: 60%;
 }
 
@@ -1791,10 +1467,10 @@ line-height: 40px;
 .titulo-frase{
     font-family: 'Cormorant Garamond', serif;
     font-size:30px ;
-    font-weight: 200;
+    font-weight: normal;
     text-align: center;
     color: #64ccc9 ;
-    margin-top: 25px;
+    margin-top: 5px;
     
 }
 
