@@ -12,14 +12,136 @@ font-family: 'Raleway', sans-serif;
 font-size: 18px;
 }
 
-.experiencia:hover{ 
+
+#section-index{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-content: center;
+    align-items: center;
+    background-image: url("../img/banner_estudiojuridico.png");
+    height:600px;
+    
+    
+      
+
+}
+
+
+
+#experiencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    height: 400px;
+    width: 350px;
+    background-color:#13494e;
+    padding: 1px 1px 1px 1px ;
+    
+}
+
+#compromiso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    height: 400px;
+    width: 350px; 
+    background-color: #13494e;
+    padding: 1px 1px 1px 1px ;
+    
+}
+
+#efectividad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    height: 400px;
+    width: 350px;    
+    background-color:#13494e;
+    padding: 1px 1px 1px 1px ;
+    
+}
+
+.img-experiencia{
+    height: 20%;
+    width: 20%;
+}
+
+.img-compromiso{
+    height: 25%;
+    width: 25%;
+}
+
+.img-efectividad{
+    height: 20%;
+    width: 20%;
+}
+
+.titulo-experiencia{
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    color:#29b7c3;
+
+}
+
+.titulo-compromiso{
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    color: #29b7c3;
+
+}
+
+.titulo-efectividad{
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    color:#29b7c3;
+
+}
+
+.txt-experiencia{
+    font-weight: lighter;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    line-height: 20px;
+    padding: 0px 4px 0px 4px;
+}
+
+.txt-compromiso{
+    font-weight: lighter;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    line-height: 20px;
+    padding: 0px 4px 0px 4px;
+   
+}
+
+.txt-efectividad{
+    font-weight: lighter;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    line-height: 20px;
+    padding: 0px 4px 0px 4px;
+}
+
+#experiencia:hover{ 
     transform: scale(1.2,1.2);}
 
-.compromiso:hover{ 
+#compromiso:hover{ 
     transform: scale(1.2,1.2);}
 
 
-.efectividad:hover{ 
+#efectividad:hover{ 
     transform: scale(1.2,1.2);}
 
     
@@ -52,7 +174,6 @@ font-size: 18px;
     justify-content: space-evenly;
     align-items: center;
 
-
 }
 
 .titulo-areas{
@@ -67,6 +188,76 @@ font-size: 18px;
     width: 90%;
 }
 
+.cards{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+    background-color: #cee8e7;
+    
+}
+
+.blog-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+.titulo-blog{
+    text-align: center;
+    font-weight: bold;
+    color: black; 
+    
+}
+
+
+
+#blog{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    
+ 
+}
+#divorcio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    height: 600px;
+    width: 400px;
+    background-color: #13494e;
+    padding: 2px 8px 2px 8px ;
+    
+}
+
+#testamento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    height: 600px;
+    width: 400px; 
+    background-color: #13494e;
+    padding: 2px 8px 2px 8px ;
+    
+}
+
+#inmobiliaria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    height: 600px;
+    width: 400px;    
+    background-color:#13494e;
+    padding: 2px 8px 2px 8px ;
+    
+}
 /*--------------------UBICACION-----------------------------*/
 
 .main-ubicacion{
@@ -74,8 +265,7 @@ font-size: 18px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;    
-    background-image: url("../img/mapa_fondo.png"); 
-    
+    background-image: url("../img/mapa_fondo.png");    
 }
 
 .nuestra-ubicacion{
@@ -177,138 +367,9 @@ font-size: 18px;
     
 #body{
     display: flex;
-    justify-content: space-around;
-}
+    justify-content: space-around;}
 
-#main{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
-    background-image: url("../img/banner_estudiojuridico.png");
-    height:800px;
-    width: 100%;
-   
-    
-    
-      
 
-}
-
-#hijo-main2{
-    display:grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-areas: "a1 a2 a3";
-    justify-content: center;
-    align-content: center;
-    height:400px;
-    width:1600px;
-   
-}
-
-.experiencia{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items:center ;
-    height: 400px;
-    width: 350px;
-    background-color:#d5a286;
-    padding: 1px 1px 1px 1px ;
-    grid-area: a1;
-}
-
-.compromiso{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items:center ;
-    height: 400px;
-    width: 350px;
-    background-color:rgb(254, 67, 66);
-    padding: 1px 1px 1px 1px ;
-    grid-area: a2;
-}
-
-.efectividad{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items:center;
-    align-content: center;
-    height: 400px;
-    width: 350px;
-    background-color:rgb(100, 164, 204);
-    padding: 1px 1px 1px 1px ;
-    grid-area: a3;
-}
-
-.img-experiencia{
-    height: 20%;
-    width: 20%;
-}
-
-.img-compromiso{
-    height: 25%;
-    width: 25%;
-}
-
-.img-efectividad{
-    height: 20%;
-    width: 20%;
-}
-
-.titulo-experiencia{
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-
-}
-
-.titulo-compromiso{
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-
-}
-
-.titulo-efectividad{
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-
-}
-
-.txt-experiencia{
-    font-weight: lighter;
-    text-align: center;
-    font-size: 15px;
-    color: white;
-    line-height: 20px;
-    padding: 0px 4px 0px 4px;
-}
-
-.txt-compromiso{
-    font-weight: lighter;
-    text-align: center;
-    font-size: 15px;
-    color: white;
-    line-height: 20px;
-    padding: 0px 4px 0px 4px;
-   
-}
-
-.txt-efectividad{
-    font-weight: lighter;
-    text-align: center;
-    font-size: 15px;
-    color: white;
-    line-height: 20px;
-    padding: 0px 4px 0px 4px;
-}
  
 /*-------------SECTION INDEX*/ 
 
@@ -319,9 +380,9 @@ font-size: 18px;
     justify-content:space-evenly;
     align-content: center;
     justify-items: center;
-    height:800px;
+    height:700px;
     width: 100%;
-    background-color: #cee8e7;
+    background-color: #1b6066;
     
 
 }
@@ -331,7 +392,7 @@ font-size: 18px;
     flex-direction: column;
     justify-content: space-around;
     align-items:center ;
-    height: 550px;
+    height: 400px;
     width: 350px;
     background-color:white;
     padding: 1px 1px 1px 1px ;
@@ -344,7 +405,7 @@ font-size: 18px;
     flex-direction: column;
     justify-content: space-around;
     align-items:center ;
-    height: 550px;
+    height: 400px;
     width: 350px;
     background-color: white;
     padding: 1px 1px 1px 1px ;
@@ -357,7 +418,7 @@ font-size: 18px;
     flex-direction: column;
     justify-content: space-around;
     align-items:center ;
-    height: 550px;
+    height: 400x;
     width: 350px;
     background-color:white;
     padding: 1px 1px 1px 1px ;
@@ -820,6 +881,10 @@ line-height: 40px;
 /*------------------------------SERVICIOS------------------------------------*/
 
 
+.cards{
+    height: 800px;
+}
+
 .main-servicios{
     flex-direction: column;
     align-items: center;
@@ -858,18 +923,61 @@ line-height: 40px;
     align-content: space-between;
 
 }
+
+.blog-section{
+    height: 180px;
+    width: 100%;
+    
+    
+
+}
+
+.titulo-blog{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    border-top: #000000 solid 3px;
+    color: black;
+    line-height: 50px; 
+    
+}
+
+#blog{
+    height: 700px;
+ 
+}
+#divorcio{
+    height: 600px;
+    width: 400px;
    
+    
+}
+
+#testamento{   
+    height: 600px;
+    width: 400px; 
+    
+    
+}
+
+#inmobiliaria{   
+    height: 600px;
+    width: 400px;  
+
+}
+
+
 /*-------------------------------UBICACION--------------------------------*/
 
 .main-ubicacion{
     
-    height: 1600px;
-    height: 2500px;
+    height: 100%;
+    height: 1800px;
     
 }
 
 .nuestra-ubicacion{ 
-    height: 180px;
+    height: 150px;
     width: 100%;
    
     
@@ -950,137 +1058,17 @@ line-height: 40px;
 
 /*MAIN INDEX*/ 
 
-#main{
+.row{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../img/banner_estudiojuridico.png");
-    height:1800px;
-    width: 100%;
-   
-    
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-content: space-between;    
+    height:1400px;  
     
       
 
 }
 
-
-
-
-#hijo-main2{
-    display:grid;    
-    justify-content: center;
-    
-    height: 1600px;
-    width: 100%;
-    
-   
-}
-
-.experiencia{
-    grid-area: "experiencia";
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items:center ;
-    height: 400px;
-    width: 350px;
-    background-color:#d5a286;
-    padding: 1px 1px 1px 1px ;
-    
-}
-
-.compromiso{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items:center ;
-    height: 400px;
-    width: 350px;
-    background-color:rgb(254, 67, 66);
-    padding: 1px 1px 1px 1px ;
-    grid-area: "compromiso";
-}
-
-.efectividad{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items:center;
-    align-content: center;
-    height: 400px;
-    width: 350px;
-    background-color:rgb(100, 164, 204);
-    padding: 1px 1px 1px 1px ;
-    grid-area:"efectividad";
-}
-
-.img-experiencia{
-    height: 20%;
-    width: 20%;
-}
-
-.img-compromiso{
-    height: 25%;
-    width: 25%;
-}
-
-.img-efectividad{
-    height: 20%;
-    width: 20%;
-}
-
-.titulo-experiencia{
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-
-}
-
-.titulo-compromiso{
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-
-}
-
-.titulo-efectividad{
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-
-}
-
-.txt-experiencia{
-    font-weight: lighter;
-    text-align: center;
-    font-size: 15px;
-    color: white;
-    line-height: 20px;
-    padding: 0px 4px 0px 4px;
-}
-
-.txt-compromiso{
-    font-weight: lighter;
-    text-align: center;
-    font-size: 15px;
-    color: white;
-    line-height: 20px;
-    padding: 0px 4px 0px 4px;
-   
-}
-
-.txt-efectividad{
-    font-weight: lighter;
-    text-align: center;
-    font-size: 15px;
-    color: white;
-    line-height: 20px;
-    padding: 0px 4px 0px 4px;
-}
 
 /*SECTION INDEX*/ 
 
@@ -1096,7 +1084,7 @@ line-height: 40px;
     justify-items: center;
     height:2200px;
     width: 100%;
-    background-color: #cee8e7;
+    background-color: #1b6066;
    
 
 }
@@ -1381,13 +1369,11 @@ line-height: 40px;
 
 /*---------------------SERVICIOS -MOBILE PHONE-----------------*/
 
-.main-servicios{
-    flex-direction: column;    
-    height:1800px;  
-    
-    
+.cards{
+    height: 1600px;
     
 }
+
 
 .section-main2{
     height: 250px;
@@ -1417,6 +1403,45 @@ line-height: 40px;
 
 }
 
+.blog-section{
+    height: 250px;
+    width: 100%;
+    
+
+
+}
+.titulo-blog{    
+    font-size: 30px;    
+    border-top: #000000 solid 3px;    
+    line-height: 50px; 
+}
+
+#blog{
+        height: 1800px;
+        justify-content: center;
+        align-content: center;
+     
+    }
+#divorcio{
+        height: 600px;
+        width: 400px;
+       
+        
+    }
+    
+ #testamento{   
+        height: 600px;
+        width: 400px; 
+        
+        
+    }
+    
+ #inmobiliaria{   
+        height: 600px;
+        width: 400px;  
+    
+    }
+    
 /*--------------------UBICACION MOBILE PHONE------------*/
 
 .main-ubicacion{
