@@ -5,9 +5,17 @@ body{
 .navbar-brand{
     height: 100px;
 }
-
+}
 .navbar-nav{
 font-family: $font_principal;
 font-size: 18px;
 }
+
+.navbar:hover{
+    color: $navbar-light-active-color;
 }
+
+.navbar:hover{
+    --bs-navbar-brand-hover-color: rgba(164, 30, 30, 0.9);
+}
+

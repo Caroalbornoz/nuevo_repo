@@ -23,7 +23,11 @@ body{
     color: rgb(0, 0, 0);
 }
 
-.nosotros--section{
+.nosotros{
+    background: linear-gradient(360deg, rgba(3,101,101,1) 0%, rgba(12,63,74,1) 29%, rgba(1,55,72,1) 100%);
+    }
+
+    .nosotros--section{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -37,13 +41,13 @@ body{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-
+        background: linear-gradient(180deg, rgba(1,55,72,1) 0%, rgba(20,27,48,1) 100%);
 
         &--titulo{
             font-family: $font_principal;
             text-align: center;
             font-weight: bold;
-            color: $color_cinco; 
+            color: $color_siete; 
             
         }
         
@@ -51,7 +55,8 @@ body{
 
     .cards{
         display: flex;
-        background-color: $color_tres;
+        
+        
     
         &--servicios{
             display: flex;
@@ -67,6 +72,7 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background-color: $color_dos;
     
 
 }
@@ -74,7 +80,8 @@ body{
 .titulo-blog{
     text-align: center;
     font-weight: bold;
-    color: black; 
+    color: $color_siete;
+    border-top:$color_siete solid 3px; 
     
 }
 
@@ -82,16 +89,20 @@ body{
 
 #blog{
     display: flex;
-    justify-content: space-evenly;
-    align-content: space-between;
+    justify-content: center;
+    align-content: center;
+    background-color: $color_dos;
     
  
 }
 
+
+
+
 .noticias{
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: space-evenly;    
     align-items: center;
     height: 600px;
     width: 400px;
@@ -102,7 +113,7 @@ body{
 
 #divorcio{
     @extend .noticias
-    
+     
 }
 
 #testamento{
@@ -110,12 +121,23 @@ body{
     
 }
 
+
 #inmobiliaria{
     @extend .noticias
     
 }
 
+.titulo-noticias{
+    font-family: $font_secundaria;
+    color: $color_cuatro;
+    text-align: center        
+}
 
+.txt-noticias{
+    font-family: $font_principal;
+    color: $color_siete;
+    text-align: center;
+}
 
 /*--------------------UBICACION-----------------------------*/
 
@@ -124,8 +146,9 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;    
-    background-image: url("../img/mapa_fondo.png");    
+    align-items: center;
+    background-color: $color_dos;    
+      
 }
 
 .ubicacion--section{
@@ -134,7 +157,8 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: $color_seis;
+    background: linear-gradient(360deg, rgba(3,101,101,1) 29%, rgba(1,55,72,1) 100%);
+    
     
     
 }
@@ -142,8 +166,9 @@ body{
 .ubicacion--titulo{    
     text-align: center;
     font-weight: bolder;
-    color: $color_cinco; 
-    font-family: 'Raleway', sans-serif; 
+    color: $color_siete; 
+    font-family: 'Raleway', sans-serif;
+    
     
 }
 
@@ -153,62 +178,213 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background-image: url(../img/banner_frase.png); 
+    
+    &--txt{
+        font-family: $font_secundaria;
+        color: $color_tres ;        
+        text-align: center;
+        font-weight:bolder;
+        
+    }
+    
+   &--titulo{
+        font-family: $font_secundaria;
+        color: $color_tres ;
+        text-align: center;       
+        
+        
+    }
+    
     
 }
 
-
-
-
-.frase--txt{
-    font-family: $font_secundaria;
-    color:$color_tres;
-    font-weight:bolder;
-    text-align: center;
-}
-
-.frase--titulo{
-    font-family: $font_secundaria;
-    text-align: center;
-    color: $color_tres;
-    
+.mapa{
+    border: 0px;   
     
 }
-
 /*------------------------------------CONTACTO----------------------------*/ 
 
 .contacto{
-    display: flex;    
-    background-image: url("../img/fondo_form.jpg"); 
-}
-
-.contacto--section{
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    
+    align-content: center;
+    background-image: url("../img/fondoform.jpg"); 
+
+
+
+    &--section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+
+
+            
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        
+
+
+
+            &--img{
+                height: 20px;
+            }
+        
+            &--titulo{
+                font-size: 20px;
+                font-weight: bold;
+                color: $color_siete;
+                
+            }
+        
+            &--txt{
+                font-size: 20px;
+                font-weight: normal;
+                color: $color_siete;
+                
+            }
+        }
+
+    }
 }
 
+
+.titulo-form{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    color: $color_siete;
+}
 
 
 .form{
     display: flex;
     flex-direction: column;
- }
-
-
-/*----------------------------------MOBILE PHONE ------------------------------------------------------------------*/
-
-@media only screen and (min-width:600px){
-
-    body{
-        font-family: $font_principal;
-         }
+    align-items: center;
     
 
+
+    &-nombre{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+
+
+        .txt-nombre{
+            font-size: 15px;
+            text-align: center;
+            font-weight: normal;
+            color: $color_siete;
+            
+        }
+    
+        .boton-nombre{
+            background-color: $color_siete;
+            height: 50px;
+            width: 350px;
+            text-align: center;
+    
+        }
+         
+    }
+    
+    &-correo{
+        display: flex;
+        flex-direction: column;
+        
+        height: 100px;
+
+
+
+        .txt-correo{
+            font-size: 15px;
+            text-align: center;
+            font-weight: normal;
+            color: $color_siete;
+        }
+    
+        .boton-correo{
+            background-color: $color_siete;
+            height: 50px;
+            width: 350px;
+            text-align: center;
+    
+        }
+    }
+
+    
+
+
+    &-telefono{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        
+
+
+        .txt-telefono{
+            font-size: 15px;
+            text-align: center;
+            font-weight: normal;
+            color:$color_siete;
+        }
+    
+        .boton-telefono{
+            background-color: $color_siete;
+            height: 50px;
+            width: 350px;
+            text-align: center;
+    
+        }
+    }
+ 
+
+    &-mensaje{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+
+
+
+        .txt-mensaje{
+        font-size: 15px;
+        text-align: center;
+        font-weight: normal;
+        color: white;
+    
+    }
+    
+    .espacio-mensaje{
+        height: 80px;
+        width:80%;
+    }
+    }
+    
+   
 }
 
+   
 
 
 
+    
 
+   
+   
+
+   
+
+    

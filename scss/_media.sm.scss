@@ -12,7 +12,7 @@
         justify-content:space-evenly;
         align-content: center;
         align-items: center;
-        background-image: url("../img/banner_estudiojuridico.png");     
+        background-image: url("../img/banner_estudiojuridico.jpg");     
         
     }
     
@@ -23,7 +23,6 @@
         align-items: center;
         justify-items: center;
         align-content: center;
-        background-color:$color_uno; 
         flex-direction: column;        
         height: 400px;
         width: 350px;        
@@ -38,10 +37,11 @@
     
     
     .valores__titulo{
+        font-family: $font_secundaria;
         font-weight: bold;
         text-align: center;
         font-size: 30px;
-        color:$color_dos;
+        color:$color_seis;
     
     }
     
@@ -49,9 +49,10 @@
     .valores__txt{
         font-weight: lighter;
         text-align: center;
-        font-size: 15px;
-        color: $color_cuatro;
-        line-height: 20px;
+        font-size: 10px;
+        color: $color_siete;
+        line-height: 30px;
+        font-weight: bold;
         padding: 0px 4px 0px 4px;
     }
     
@@ -73,17 +74,20 @@
         flex-direction: column;
         justify-content:center;
         align-content: center;
-        background-color: $color_uno;
-        height: 2200px;
+        background: linear-gradient(360deg, rgba(20,27,48,1) 0%, rgba(12,63,74,1) 79%, rgba(3,101,101,1) 100%);
+        height: 1800px;
         
         &__cards{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items:center ;
-            background-color:$color_cuatro;
-            height: 600px;
-            width: 300px;
+            background-color:$color_cinco;
+            height: 400px;
+            border-radius: 10px;
+            margin: 10%;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
             
             
         
@@ -93,24 +97,15 @@
         &__texto{
             font-weight:normal;
             text-align: center;
-            font-size: 20px;
-            color: $color_cinco;
-            line-height: 30px;
-            padding: 0px 4px 0px 4px;
-        }
-        
-        
-        &__texto{
-            font-weight:normal;
-            text-align: center;
-            font-size: 20px;
-            color: $color_cinco;
-            line-height: 30px;
-            padding: 0px 4px 0px 4px;
+            font-size: 15px;
+            color: $color_siete;
+            line-height: 20px;
+            padding: 10px;
         }
         
         &__img{
            height: 150px;
+           padding: 1px;
            
         }
     }
@@ -118,7 +113,6 @@
 
 /*-----------------------------SOBRE NOSOTROS MOBILE------------------------------*/
     .nosotros{
-    background-color: $color_seis;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -141,8 +135,8 @@
         text-align: center;
         font-size: 30px;
         font-weight: bold;
-        border-top: $color_cinco solid 3px;
-        color: $color_cinco;
+        border-top: $color_dos solid 3px;
+        color: $color_dos;
         line-height: 50px;
 
     }
@@ -151,7 +145,7 @@
 
     font-size: 14px;
     text-align: center;
-    color: $color_cinco;
+    color: $color_siete;
     line-height: 40px;
     }
 
@@ -161,7 +155,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        background-color:$color_tres;
+        background-color:$color_dos;
         height: 1600px;
         width: 100%; 
 
@@ -184,12 +178,12 @@
     .areas{
         height: 250px;
         width: 100%;
-        background-color: rgb(236, 236, 236);
+        
 
         &--titulo{
         
             font-size: 30px;    
-            border-top: #000000 solid 3px;    
+            border-top: $color_siete solid 3px;    
             line-height: 50px; 
         
         }
@@ -197,8 +191,10 @@
     
     
     .cards{
-        height: 1600px;
+        height: 2000px;
         flex-direction: column;
+        align-content: flex-end;
+        background-image: url("../img/banner_areas-sm.png");
         
         
         
@@ -234,7 +230,7 @@
     }
 
     #blog{
-            height: 1800px;
+            height: 2000px;
             justify-content: center;
             align-content: center;
         
@@ -262,8 +258,16 @@
         
         }
 
-
-
+   
+    .titulo-noticias{
+        font-size:25px;
+        margin-top:5px;
+   }
+        
+     .txt-noticias{
+        font-size: 12px;
+        margin-top: 5px;
+    }
 
 
 
@@ -281,34 +285,38 @@
         font-weight: bold;
         text-align: center;
         border-top: $color_cinco solid 3px;
+        height: 300px;
+        width: 100%;
+
+
+        .ubicacion--titulo{
+            font-size: 30px;
+            font-weight: bold;
+            border-top: $color_siete solid 3px;
+            line-height: 50px;
+        
+        
+        }   
         
     }  
 
 
-    .ubicacion--section{ 
-        height: 400px;
-        width: 100%;
     
-        
-    }
 
     .frase{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 500px;
+        height: 300px;
         width: 60%;
+        
 
 
         &--comillas{
-            height: 50px;
+            height: 40px;
         }
     
     
         &--txt{
             font-family: 'Cormorant Garamond', serif;
-            font-size: 30px;
+            font-size: 25px;
             color:#64ccc9 ;
             font-weight:bolder;
             text-align: center;
@@ -316,7 +324,7 @@
     
         &--titulo{
             font-family: 'Cormorant Garamond', serif;
-            font-size:30px ;
+            font-size:25px ;
             font-weight: normal;
             text-align: center;
             color: #64ccc9 ;
@@ -325,7 +333,12 @@
         }
     }
     
-
+    .mapa{
+        width: 350px;
+        height: 350px;
+        padding: 10%;
+        
+     }
 
 /*------------------------------------CONTACTO MOBILE PHONE----------------------------*/ 
 
@@ -333,7 +346,7 @@
         flex-direction: column;
         height: 1500px;
         width: 100%;
-        justify-content: space-evenly;
+        
         
         &--section{
             height: 400px;    
@@ -342,167 +355,41 @@
             
 
 
-            .info{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                height: 150px;
-        
-                &--img{
-                    height: 20px;
-                }
-                
-                &--titulo{
-                    font-size: 20px;
-                    font-weight: bold;
-                    color: $color_cuatro;
-                    
-                }
-                
-                &--txt{
-                    font-size: 20px;
-                    font-weight: normal;
-                    color: $color_cuatro;
-                    
-                }
-            }
         
         }
     
    
     }
-    
    
     .form{
-        height: 800px;
-        
+        height: 800px;        
         justify-content: space-evenly;
-        align-items: center;
         
-        
-    }
-    
-    
-    .titulo-form{
-        font-size: 30px;
-        text-align: center;
-        font-weight: bolder;
-        color: white;
-    }
-    
-    .form-nombre{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width:80%;
-        height: 100px;
-    }
-    
-    .txt-nombre{
-        font-size: 15px;
-        text-align: center;
-        font-weight: normal;
-        color: white;
+        &-nombre{
+            width:80%;
+           
+           }
+
+           
+        &-correo{
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+      
+        }
         
     }
     
-    .boton-nombre{
-        background-color: white;
-        height: 30px;
-        width: 350px;
-        text-align: center;
     
     }
     
     
     
-    .form-correo{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 80%;
-        height: 100px;
-    }
-    
-    .txt-correo{
-        font-size: 15px;
-        text-align: center;
-        font-weight: normal;
-        color: white;
-    }
-    
-    .boton-correo{
-        background-color: white;
-        height: 50px;
-        width: 350px;
-        text-align: center;
-    
-    }
-    
-    
-    .form-telefono{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        height: 100px;
-    }
-    
-    .txt-telefono{
-        font-size: 15px;
-        text-align: center;
-        font-weight: normal;
-        color: white;
-    }
-    
-    .boton-telefono{
-        background-color: white;
-        height: 50px;
-        width: 70%;
-        text-align: center;
-    
-    }
-    
-    .form-mensaje{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        height: 60px;
-    }
-    
-    .txt-mensaje{
-        font-size: 15px;
-        text-align: center;
-        font-weight: normal;
-        color: white;
-    
-    }
-    
-    .espacio-mensaje{
-        height: 80px;
-        width:80%;
-    }
-    
-    .boton-enviar{
-        font-size: 20px;
-        background-color: white;
-        text-align: center;
-        color: gray;
-        font-family: $font_principal;
-    
-    
-    }
-    
+     
 
 
 
-}
+
 
    
 

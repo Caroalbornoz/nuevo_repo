@@ -20,42 +20,44 @@
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-    align-content: center;
+    align-content: space-between;
     align-items: center;
-    background-image: url("../img/banner_estudiojuridico.png");    
+    height:600px ;
+    background-color: $color_cinco;
+    background-image: url("../img/banner_estudiojuridico.jpg");   
             
         
 
         .valorescards{
         display: flex;
         justify-content: center;
-        background-color:$color_uno;  
+            
 
         }
         
         .valores__cards{
-        display: flex;
-        justify-content: center;
+        display: flex;        
         align-items: center;
-        background-color:$color_uno; 
         flex-direction: column;    
         height: 400px;
         width: 350px;    
-        padding: 1px 1px 1px 1px ;
+        padding: 50px 1px 1px 1px ;
         
             .valores__img{
-                height: 60px;
-                width: 60px;
+                height: 80px;
+                width: 80px;
+                margin: 5%;
                 
             }
 
 
 
             .valores__titulo{
-                font-weight: bold;
+                font-family: $font_secundaria;
                 text-align: center;
-                font-size: 30px;
-                color:$color_dos;
+                font-size: 35px;
+                color:$color_seis;
+                margin: 20px;
 
             }
 
@@ -64,8 +66,9 @@
                 font-weight: lighter;
                 text-align: center;
                 font-size: 15px;
-                color: $color_cuatro;
-                line-height: 20px;
+                color: $color_siete;
+                line-height: 30px;
+                font-weight:400;
                 padding: 0px 4px 0px 4px;
             }
 
@@ -85,104 +88,50 @@
     justify-content:space-evenly;
     align-content: center;
     justify-items: center;
-    background-color: $color_uno;
+    background-image: url("../img/banner_virtudes.png"); 
+    
     height: 800px;
+    
+
     
     &__cards{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items:center ;
-        background-color:$color_cuatro;
+        background-color:$color_uno;
         padding: 1px 1px 1px 1px ;
-        height: 400px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
         
     
     }
     
     
     &__texto{
-        font-weight:normal;
+        font: italic;
         text-align: center;
-        font-size: 20px;
-        color: $color_cinco;
+        font-size: 18px;
+        color: $color_siete;
         line-height: 30px;
-        padding: 0px 4px 0px 4px;
+        padding: 10px;
+       
     }
     
     
-    &__texto{
-        font-weight:normal;
-        text-align: center;
-        font-size: 20px;
-        color: $color_cinco;
-        line-height: 30px;
-        padding: 0px 4px 0px 4px;
-    }
+   
     
     &__img{
-       height: 150px;
+       height: 120px;
        
     }
     }
 
-
-
-
-    .valorescards{
-            display: flex;
-            justify-content: center;
-            background-color:$color_uno;  
-
-     }
-    .valores__cards{
-    display: flex;
-    justify-content: center;
-    background-color:$color_uno; 
-    flex-direction: column;    
-    height: 400px;
-    width: 350px;    
-    padding: 1px 1px 1px 1px ;
-        
-        
-            .valores__img{
-            height: 60px;          
-            }
-
-
-
-        .valores__titulo{
-            font-weight: bold;
-            text-align: center;
-            font-size: 30px;
-            color:$color_dos;
-
-        }
-
-
-        .valores__txt{
-            font-weight: lighter;
-            text-align: center;
-            font-size: 15px;
-            color: $color_cuatro;
-            line-height: 20px;
-            padding: 0px 4px 0px 4px;
-        }
-
-
-
-        .valores__experiencia:hover{ 
-            transform: scale(1.2,1.2);        }  
-
-
-
-    }
-
-
 /*----------------------NOSOTROS-------------------------------------*/
 
     .nosotros{
-        background-color: rgb(236, 236, 236);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -205,8 +154,8 @@
         text-align: center;
         font-size: 30px;
         font-weight: bold;
-        border-top: $color_cinco solid 3px;
-        color: $color_cinco;
+        border-top: $color_siete solid 3px;
+        color: $color_siete;
         line-height: 50px;
     
     }
@@ -215,7 +164,7 @@
 
     font-size: 14px;
     text-align: center;
-    color: $color_cinco;
+    color: $color_siete;
     line-height: 40px;
     }
 
@@ -224,7 +173,7 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        background-color:$color_tres;
+        background-color:$color_dos;
         height: 600px;
         width: 100%; 
 
@@ -246,14 +195,13 @@
     .areas{
         height: 180px;
         width: 100%;
-        background-color: $color_seis;
+        background: linear-gradient(180deg, rgba(1,55,72,1) 0%, rgba(12,63,74,1) 47%, rgba(20,27,48,1) 100%);
 
         &--titulo{
             text-align: center;
             font-size: 35px;
             font-weight: bold;
-            border-top: $color_cinco solid 3px;
-            color: $color_cinco;
+            border-top: $color_siete solid 3px;
             line-height: 50px;   
         
         }
@@ -262,11 +210,12 @@
     .cards{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: end;
         align-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         justify-items: center;
         height: 800px;
+        background-image: url("../img/banner_areas.png");
 
         &--servicios{
             flex-direction: row;
@@ -284,11 +233,7 @@
     }
 
     .titulo-blog{
-        text-align: center;
         font-size: 40px;
-        font-weight: bold;
-        border-top: #000000 solid 3px;
-        color: black;
         line-height: 50px; 
         
     }
@@ -319,9 +264,17 @@
 
     }
 
-
-
-  
+    .titulo-noticias{
+        font-size:20px;
+        margin-top: 5px;
+    }
+    
+    .txt-noticias{
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    
+    /*--------------------UBICACION DESKTOP------------*/ 
 
     .ubicacion{
 
@@ -336,9 +289,9 @@
            
          
             .ubicacion--titulo{
-                font-size: 35px;
+                font-size: 30px;
                 font-weight: bold;
-                border-top: $color_cinco solid 3px;
+                border-top: $color_siete solid 3px;
                 line-height: 50px;
             
             
@@ -352,12 +305,9 @@
     
     
     .frase{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
         height: 400px;
         width: 60%;
+        background-image: url(../img/banner_frase.png); 
 
 
 
@@ -367,18 +317,12 @@
         
         
         &--txt{
-            font-family: $font_secundaria;
-            font-size: 30px;
-            color: $color_tres ;        
-            text-align: center;
-            font-weight:bolder;
+            font-size: 30px;            
             
         }
         
        &--titulo{
-            font-family: $font_secundaria;
-            font-size: 30px;
-            color: $color_tres ;        
+            font-size: 30px;              
             font-weight: 200;
             margin-top: 25px;
             
@@ -386,196 +330,72 @@
     
         }   
    
-
+.mapa{
+   width: 600px;
+   height: 600px;
+   
+}
 
 
 /*------------------------------------CONTACTO----------------------------*/ 
 
     .contacto{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        align-content: center;
         height:800px;
         width: 100%;
-        background-image: url("../img/fondo_form.jpg"); 
+        
 
 
 
         &--section{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
             height: 800px;
             width: 600px;
-
-
-
-                
-        .info{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 150px;
-
-
-
-                &--img{
-                    height: 20px;
-                }
-            
-                &--titulo{
-                    font-size: 20px;
-                    font-weight: bold;
-                    color: $color_cuatro;
-                    
-                }
-            
-                &--txt{
-                    font-size: 20px;
-                    font-weight: normal;
-                    color: $color_cuatro;
-                    
-                }
-            }
-
-        }
-    }
-
-
-    .titulo-form{
-        font-size: 30px;
-        text-align: center;
-        font-weight: bolder;
-        color: $color_cuatro;
-    }
-
-    
-    .form{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 600px;
-        width: 800px;
-        
-    }
-
+            justify-content: space-evenly;
 
    
-    .form-nombre{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        height: 100px;
+       
+        }
+    }
+
+
+       
+    .form{
+        justify-content: space-around;
+        height: 600px;
+        width: 800px;
 
 
 
-        .txt-nombre{
-            font-size: 15px;
-            text-align: center;
-            font-weight: normal;
-            color: $color_cuatro;
+        &-nombre{
+            width: 100%;
+         
+        }
+        
+        &-correo{
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
             
-        }
-    
-        .boton-nombre{
-            background-color: $color_cuatro;
-            height: 50px;
-            width: 350px;
-            text-align: center;
-    
-        }
+            }
+
+
+                    
+            }
     }
 
+        
     
 
+    
+    
+
+    
+
+   
+
+   
+    
 
 
-    .form-correo{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        height: 100px;
-    }
-
-    .txt-correo{
-        font-size: 15px;
-        text-align: center;
-        font-weight: normal;
-        color: $color_cuatro;
-    }
-
-    .boton-correo{
-        background-color: $color_cuatro;
-        height: 50px;
-        width: 350px;
-        text-align: center;
-
-    }
-
-
-    .form-telefono{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        height: 100px;
-    }
-
-    .txt-telefono{
-        font-size: 15px;
-        text-align: center;
-        font-weight: normal;
-        color:$color_cuatro;
-    }
-
-    .boton-telefono{
-        background-color: $color_cuatro;
-        height: 50px;
-        width: 350px;
-        text-align: center;
-
-    }
-
-    .form-mensaje{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        height: 60px;
-    }
-
-    .txt-mensaje{
-        font-size: 15px;
-        text-align: center;
-        font-weight: normal;
-        color: $color_cuatro;
-
-    }
-
-    .espacio-mensaje{
-        height: 80px;
-        width: 100%;
-    }
-
-    .boton-enviar{
-        font-size: 20px;
-        background-color: $color_cuatro;
-        text-align: center;
-        color: $color_seis;
-        font-family: $font_principal;
-    }
-
-}
 
 
 
